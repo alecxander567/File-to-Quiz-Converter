@@ -19,7 +19,7 @@ function Landingpage() {
             {/* Navbar */}
             <nav className={`navbar navbar-expand-lg ${navClass}`}>
                 <div className="container">
-                <a className="navbar-brand" href="#">MyApp</a>
+                <a className="navbar-brand" href="#">File to Quiz Generator</a>
                 <button onClick={toggleMode} className="btn btn-outline-secondary">
                     {darkMode ? 'Light Mode' : 'Dark Mode'}
                 </button>
@@ -29,7 +29,7 @@ function Landingpage() {
             {/* Hero Section */}
             <div className="d-flex align-items-center justify-content-center vh-100 flex-column text-center" style={{ paddingBottom: '80px' }}>
                 <i className="bi bi-file-earmark-text-fill display-1 mb-2 text-primary"></i>
-                <h1 className="display-2 fw-bold">File to Quiz Converter</h1>
+                <h1 className="display-2 fw-bold">File to Quiz Generator</h1>
                 <p className="lead mt-3">
                     <i className="bi bi-lightbulb-fill me-2 text-warning"></i>
                     Convert your files into quizzes with one click.
@@ -42,7 +42,7 @@ function Landingpage() {
 
             {/* Features */}
             <div className="container my-5">
-                <h2 className="text-center mb-4">Why Use File to Quiz Converter?</h2>
+                <h2 className="text-center mb-4">Why Use File to Quiz Generator?</h2>
                 <div className="row text-center">
                     <div className="col-md-4">
                     <i className="bi bi-upload display-4 text-primary mb-3"></i>
@@ -64,7 +64,7 @@ function Landingpage() {
 
             {/* Footer */}
             <footer className={`text-center py-3 ${navClass}`}>
-                &copy; {new Date().getFullYear()} MyApp. All rights reserved.
+                &copy; {new Date().getFullYear()} File to Quiz Generator. All rights reserved.
             </footer>
         </div>
     );

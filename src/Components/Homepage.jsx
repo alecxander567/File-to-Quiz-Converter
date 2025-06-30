@@ -92,7 +92,16 @@ function Homepage() {
         {/* Navbar */}
         <nav className={`navbar ${navClass}`}>
             <div className="container">
-            <a className="navbar-brand" href="#">File to Quiz</a>
+             <a
+                className="navbar-brand"
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.reload(); 
+                }}
+              >
+              File to Quiz
+              </a>
             <button onClick={toggleMode} className="btn btn-outline-secondary">
                 {darkMode ? 'Light Mode' : 'Dark Mode'}
             </button>
