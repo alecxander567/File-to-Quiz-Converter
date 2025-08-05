@@ -1,9 +1,12 @@
-FROM eclipse-temurin:17-jdk
+FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
+# Copy the JAR file
+COPY demo-0.0.1-SNAPSHOT.jar app.jar
 
+# Expose port (default Spring Boot port)
 EXPOSE 8080
 
+# Run the JAR
 ENTRYPOINT ["java", "-jar", "app.jar"]
