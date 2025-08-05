@@ -1,11 +1,9 @@
-# Use a base image with Java installed
-FROM eclipse-temurin:17-jdk-alpine
+FROM eclipse-temurin:17-jdk
 
-# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the built jar file to the container
-COPY target/*.jar app.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
 
-# Run the jar file
+EXPOSE 8080
+
 ENTRYPOINT ["java", "-jar", "app.jar"]
