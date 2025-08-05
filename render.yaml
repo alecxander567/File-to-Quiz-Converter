@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: spring-boot-app
-    runtime: docker
-    plan: free
-    dockerfilePath: Dockerfile
